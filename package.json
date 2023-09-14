@@ -1,12 +1,70 @@
 {
-  "name": "bn-digital",
-  "workspaces": [
-    "packages/*"
+  "name": "@bn-digital/strapi-plugin-field-uuid",
+  "version": "1.2.12",
+  "description": "This plugin adds support of UUID field type to Strapi",
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "custom-fields",
+    "uuid"
   ],
-  "devDependencies": {
-    "@bn-digital/prettier-config": "^2.3.7",
-    "@strapi/strapi": "^4.10.1"
+  "strapi": {
+    "name": "field-uuid",
+    "description": "This plugin adds support of UUID field type to Strapi",
+    "kind": "plugin",
+    "displayName": "Field UUID"
   },
-  "packageManager": "yarn@3.2.3",
-  "prettier": "@bn-digital/prettier-config"
+  "readme": "./README.md",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "BN Enginseers",
+      "email": "dev@bndigital.co",
+      "url": "https://github.com/bn-digital"
+    }
+  ],
+  "author": {
+    "name": "Vlad Volkov",
+    "email": "vlad@hiberbee.com",
+    "url": "https://github.com/VladyslavVolkov"
+  },
+  "repository": {
+    "url": "https://github.com/bn-digital/strapi",
+    "type": "git",
+    "directory": "packages/strapi-plugin-field-uuid"
+  },
+  "bugs": {
+    "url": "https://github.com/bn-digital/strapi/issues",
+    "email": "dev@bndigital.co"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "branches": [
+      "latest"
+    ]
+  },
+  "scripts": {
+    "build": "",
+    "release": "yarn build && yarn npm publish"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.4.0"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^1.6.6",
+    "@strapi/helper-plugin": "^4.9.1",
+    "@strapi/icons": "^1.6.6",
+    "prop-types": "^15.8.1",
+    "react-intl": "^6.4.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@strapi/icons": "^1.6.6",
+    "@types/uuid": "^9.0.1",
+    "react": "^18.2.0",
+    "styled-components": "^5.3.9",
+    "typescript": "^5.0.4"
+  }
 }
