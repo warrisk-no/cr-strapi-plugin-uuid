@@ -8,6 +8,6 @@ module.exports = ({ strapi }) => {
   strapi.customFields.register({
     name: 'uuid',
     plugin,
-    type: 'uid',
+    type: 'string',
   })
 }
